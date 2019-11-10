@@ -1,0 +1,30 @@
+<h1><i class="icon add"></i>Add Student</h1>
+
+<form [formGroup]='studentForm' (ngSubmit)="save()" class="ui form" method="post" action="">
+    <table>
+        <tbody>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" placeholder="Enter Name" name="name" formControllerNamw="name"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone:</label></td>
+                <td><input type="tel" name="phone" id="phone" placeholder="Enter Phone" formControllerName="phone"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email" placeholder="Enter Email" formControllerName="email"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><input type="text" name="address" id="address" placeholder="Enter Address" formControllerName="address"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button class="ui primary button">
+                Save
+                </button></td>
+            </tr>
+        </tbody>
+    </table>
+</form>

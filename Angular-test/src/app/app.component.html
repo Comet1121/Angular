@@ -1,14 +1,15 @@
 <nav class="ui inverted grey menu">
 
-  <a href="#" class="item" [routerLink]="['/list']" >
+  <a class="item" [routerLink]="['/']" >
     <i class="icon home"></i>Home
   </a>
-  <a href="#" class="item">
+  <a class="item" [routerLink]="['/list']">
     <i class="icon users"></i>
     Student List
   </a>
-  <a href="#" class="item">
+  <a class="item" [routerLink]="[ '/edit']">
     <i class="icon add"></i>
     Add Student
   </a>
 </nav>
+<router-outlet></router-outlet>
